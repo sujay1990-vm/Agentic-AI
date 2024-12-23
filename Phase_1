@@ -1,0 +1,45 @@
+Agentic AI Solution—What We’ll Build:
+Dynamic Query Reformulation:
+
+Use LangChain ConversationalRetrievalChain or LangChain Agents with Memory to build robust query refinement.
+Track history using Redis or SQLite memory buffers for longer context.
+Schema and Metadata Extraction Agent:
+
+Automatically read schemas from SQL databases instead of hardcoding metadata.
+Cache schemas dynamically so the agent can pull metadata when needed.
+Multi-Table Query Routing Agent:
+
+Use planning and reasoning agents to route queries dynamically across multiple tables.
+Support joins and relationships between tables using foreign keys.
+Vector Store and Semantic Search Agent:
+
+Use FAISS or Pinecone for semantic search across unstructured columns (e.g., text).
+Enable hybrid retrieval—combine SQL with semantic vector search when needed.
+Chunked Query Handling:
+
+Break down large SQL results into chunks and summarize data before passing it to the LLM to avoid token limits.
+Fallback and Reflection Mechanism:
+
+Introduce reflection loops to evaluate answers and retry queries with adjusted parameters if results are empty or ambiguous.
+Multi-Agent Collaboration:
+
+Add sub-agents for query generation, reformulation, vector search, SQL execution, and result merging.
+
+Architecture Plan:
+User Query Input
+→ Sent to Planning Agent for parsing and splitting tasks.
+
+Query Decomposition:
+
+SQL Agent handles structured data queries.
+RAG Agent fetches unstructured data from vector stores.
+Multi-Modal Agent processes images/videos (later phases).
+Data Fusion Agent:
+
+Combines results from all sources and summarizes them.
+Evaluation Agent:
+
+Reflects on outputs and refines queries if results are ambiguous or incomplete.
+Response Generator:
+
+Formats the final response for clarity and consistency.
