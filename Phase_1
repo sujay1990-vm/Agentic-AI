@@ -43,3 +43,16 @@ Reflects on outputs and refines queries if results are ambiguous or incomplete.
 Response Generator:
 
 Formats the final response for clarity and consistency.
+
+
+Final Enhanced Workflow:
+Entity, Intent, Relationship Detection (NLP)
+Query Classification (SQL, Graph, or RAG) (New Step)
+Table Detection (Dynamic)
+Schema / Metadata Extraction
+Knowledge Graph or Vector Store Fetch
+Combining Context from All Sources
+Follow-ups, Memory, and Conversation Flow
+SQL Query Generation and Execution
+Validation & Refinement (Optional)
+Final Response Synthesis
