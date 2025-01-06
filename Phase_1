@@ -60,4 +60,5 @@ Evaluation Setup
 Maintaining Session history & memory
 User Feedback incorporating
 User Instructions , sample SQY query addition from UI
-
+Filtering Output with sensitive info or any chosen info
+guardrails ?
